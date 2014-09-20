@@ -1,0 +1,41 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+html, body {
+    /*margin: 0;
+    padding: 0;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+body
+{
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.header
+{
+	
+}
+
+.header .pull-left #logo a
+{
+	margin: auto;
+	padding:20px 20px;
+	font: bold italic Garamond 30px;
+	float: left;
+	text-decoration: none;
+
+}
+
+.header .pull-right .nav ul 
+{
+	display: block;
+	float: right;
+	padding: 20px 20px 0px 0px;
+	margin: auto;
+	list-style: none;
+	clear: right;
+}
