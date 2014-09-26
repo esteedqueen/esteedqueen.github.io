@@ -6,10 +6,15 @@ html, body {
     /*margin: 0;
     padding: 0;*/
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
-body
-{
+#wrap{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px; /*negative indent for footer */
+  /*padding: 0 0 60px; /*padding bottom by footer height*/ 
 
 }
 
@@ -93,5 +98,19 @@ a {
 }
 
 
+#footer {
+  height: 60px;
+}
 
+#footer {
+  background-color: #eee;
+}
 
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
