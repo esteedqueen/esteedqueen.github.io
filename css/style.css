@@ -1,41 +1,119 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 html, body {
-    /*margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
-}
-
-body
-{
-
+    height: 100%;
 }
 
 a {
 	text-decoration: none;
 }
 
-.header
-{
+
+.bg {
+  background: url("img/me.jpg");
+  width: 100%;
+  height: 400px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.bg:hover {
+	opacity: 1.0;
+
+}
+
+.jumbotron {
+  height: 400px;
+  text-align: center;
+  color: white;
+  text-shadow: #444 0 1px 1px;
+  background: -moz-linear-gradient(
+        top, rgba(220,20,60, 0.4), rgba(255,215,0, 0.2));
+  background: -webkit-gradient(linear, left top, left bottom, from(
+        rgba(220,20,60, 0.4)), to(rgba(255,215,0, 0.2)));
+
+}
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box ;
+  box-sizing:border-box ;
+}
+
+
+.wrapper {
+	width: 90%;
+  padding-top: 20px;
+  margin: auto;
+  /*float: left;*/
+ 
 	
-}
-
-.header .pull-left #logo a
-{
-	margin: auto;
-	padding:20px 20px;
-	font: bold italic Garamond 30px;
-	float: left;
-	text-decoration: none;
 
 }
 
-.header .pull-right .nav ul 
-{
-	display: block;
-	float: right;
-	padding: 20px 20px 0px 0px;
-	margin: auto;
-	list-style: none;
-	clear: right;
+.mybox{
+  width:100%;
+  height:150px;
+  /*float:left;*/
+  text-align: center;
+  padding:20px;
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color:#fff;
+  font-weight:600;
+  background-image:-webkit-linear-gradient(top, rgba(51,51,51,.1), rgba(51,51,51,.2))
+}
+.icon{
+  font-size:64px;
+  color:#fff;
+  text-shadow:8px 8px rgba(0,0,0,.3);
+
+}
+.box1{
+  background-color: #FF003C;
+}
+.box2{
+  
+  background-color: #00C176;
+}
+.box2 > p {
+  padding-top: 10px;
+}
+.box2 > span {
+  font-size: 84px;
+}
+.box3{
+  background-color: #FABE28;
+}
+
+footer > p {
+  padding:1em;
+  text-align:center;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -60px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.myfooter, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 60px; 
+}
+.myfooter {
+  background: #eee;
 }
