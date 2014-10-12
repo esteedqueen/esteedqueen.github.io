@@ -15,13 +15,20 @@ a {
 
 
 .bg {
-  background: url("img/me.jpg");
+  background: url("img/moi.jpg") no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
   width: 100%;
-  height: 400px; /*same height as jumbotron */
+  height: 500px; /*same height as jumbotron */
   top:0;
   left:0;
   z-index: -1;
-  opacity: 0.6;
+  /*opacity: 0.6;*/
+
+
+
 }
 
 .bg:hover {
@@ -30,7 +37,8 @@ a {
 }
 
 .jumbotron {
-  height: 400px;
+  height: 500px;
+  width: 100;
   text-align: center;
   color: white;
   text-shadow: #444 0 1px 1px;
@@ -92,8 +100,80 @@ a {
 .box2 > span {
   font-size: 84px;
 }
+.btn-success{
+  background-color: #00C176;
+}
 .box3{
   background-color: #FABE28;
+}
+
+
+/* Section Dividers */
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 450px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-top: 45px;
+
+
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+    
+    text-align: center;
+}
+
+.textdivider h1 {
+  padding-top: 70px;
+  color: white;
+  font-size: 40px;
+}
+
+.textdivider p {
+  color: white;
+  font-size: 25px;
+}
+
+
+/* Section Dividers Backgrounds */
+
+.divider1 {
+  background-image: url('img/divider1.jpg')
+}
+
+.divider2 {
+  background-image: url('img/desk.jpg')
+}
+
+.divider3 {
+  background-image: url('../img/bg/divider3.jpg');
+  margin-top: 0px;
+}
+
+.divider4 {
+  background-image: url('../img/bg/divider4.jpg')
+}
+
+.divider6 {
+  background-image: url('../img/bg/divider6.jpg')
 }
 
 footer > p {
@@ -101,19 +181,8 @@ footer > p {
   text-align:center;
 }
 
-.page-wrap {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -60px; 
-}
-.page-wrap:after {
-  content: "";
-  display: block;
-}
-.myfooter, .page-wrap:after {
-  /* .push must be the same height as footer */
-  height: 60px; 
-}
+
 .myfooter {
   background: #eee;
 }
+
